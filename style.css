@@ -1,0 +1,680 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+    /* Navagation Bar  CSS Start Here   */
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    /* background-color: #333; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 35px;
+    z-index: 99;
+    background-color: #090909c0;
+}
+
+nav ul {
+    display: flex;
+    gap: 28px;
+}
+
+nav ul li a {
+    color: rgb(133 133 133);
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    transition: color 0.3s ease;
+
+}
+
+nav .logo img {
+    width: 200px;
+}
+
+/* Navagation Bar CSS  End Here   */
+
+/* Home  CSS Start Here */
+
+#home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding: 14vw 0;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#bg-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+#home .content {
+    z-index: 1;
+}
+
+#home h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: .8vw;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#home h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2vw;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#home p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+.home-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btn button {
+    margin-right: 39px;
+    /* gap: 50px; */
+}
+/* Home CSS  End Here   */
+
+/* All button  */
+.sm-btn .all-btn {
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sm-btn .all-btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sm-btn .all-btn:hover a{
+    color: #000000;
+    transition: all 0.3s ease;
+}
+.sm-btn .all-btn:hover{
+    background-color: #ffffff;
+}
+/* All button  */
+
+
+/* About CSS Start Here   */
+
+#about{
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    padding: 2vw 5vw;
+}
+.right-side {
+    width: 50%;
+}
+#about .right-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:4px;
+    filter: grayscale(70%);
+
+}
+.left-side {
+    width: 50%;
+}
+.left-side h1{
+  font-family: "Jost", sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+} 
+.left-side p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    line-height: 18px;
+}
+
+.left-side .line{
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: #3b3b3bd0;
+    margin: 10px 0;
+}
+
+.left-side h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+.left-side .skills-btn{
+    padding: 7px 15px;
+    background-color: #111111;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-right: 14px;
+}
+
+.left-side .xd-bnt{
+    margin-top: 16px;
+}
+
+.left-side .work-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 6.7vw;
+}
+
+.left-side .work {
+    text-align: justify;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+.left-side .work h5 {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.left-side p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    /* margin-bottom: 3vw; */
+    margin: 1.8vw 0;
+}
+.left-side .work .date {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+/* About  CSS Start Here   */
+
+#project {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 6vw 0;
+}
+
+#project h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+#project h1 span {
+    width: 300px;
+    height: 1px;
+    background-color: #9b9b9b;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+}
+
+.album .responsive-container-block.bg {
+    max-width: 1320px;
+    margin: 0 0 0 0;
+    justify-content: space-between;
+}
+
+.album .img {
+    width: 100%;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    filter: grayscale(100%) blur(.8px);
+    transition: all 0.3s ease;
+
+    scale: 1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.album .img:hover {
+    filter: saturate(100%);
+    transition: all 0.3s ease-in;
+    transform: scale(1.02);
+}
+
+.album .responsive-container-block.img-cont {
+    flex-direction: column;
+    max-width: 33.3%;
+    min-height: auto;
+    margin: 0 0 0 0;
+    height: 100%;
+}
+
+.album .img.img-big {
+    height: 50%;
+    margin: 0 0 16px 0;
+}
+
+#project .gallery-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* About CSS  End Here   */
+
+/* Education  CSS Start Here   */
+#education{
+    width: 100%;
+    min-height :75vh;
+    padding: 4vw;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    border-bottom-style: hidden;
+    border: 1px solid #313131;
+}
+
+.education-main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.education-left{
+    width: 55%;
+}
+.education-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    filter: grayscale(70%);
+}
+.education-right{
+    width: 40%;
+}
+.education-right h1{
+    font-family: "Jost", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.education-right p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    line-height: 26px;
+}
+.education-right .line{
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: #3b3b3bd0;
+    margin: 10px 0;
+}
+.education-right h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+.education-section{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 2.2vw;
+}
+.vertical-line{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff;
+}
+.education{
+    position: relative;
+    margin-left: 20px;
+}
+.education .cir {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: -26px;
+    top: 0;
+}
+.education h5 {
+    font-family: "Jost", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+/* Education CSS  End Here   */
+/* Contact  CSS Start Here   */
+#contact {
+    width: 100%;
+    min-height: 75vh;
+    padding: 4vw;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.contact-left {
+    width: 50%;
+}
+
+.contact-left h1 {
+    width: 100%; 
+    font-family: "Jost", sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-left .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #3b3b3bd0;
+    margin: 10px 0;
+}
+.contact-left p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    line-height: 26px;
+}
+
+.contact-left .ph-box {
+    font-family: "Jost", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+.contact-left .ph-box i {
+    font-size: 30px;
+    color: #ffffff;
+}
+.contact-left .ph-box span {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.contact-left .email-box{
+    font-family: "Jost", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+.contact-left .email-box i {
+    font-size: 30px;
+    color: #ffffff;
+}
+.contact-left .email-box span {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+.contact-left .social-media-box {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-top: 35px;
+}
+.contact-left .social-media-box i {
+    font-size: 34px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+.contact-right {
+    width: 40%;
+    
+}
+
+.contact-right form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-right form .name-input{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-right form input,
+.contact-right form textarea {
+    width: 100%;
+    font-family: "Jost", sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.contact-right form button {
+    font-family: "Jost", sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Contact CSS  End Here   */
+/* Footer CSS Start Here */
+footer {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+footer p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+footer p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+footer p a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+footer p span {
+    color: #ffffff;
+    font-weight: 500;
+}
+footer p span:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/* Footer CSS Start Here */
+footer{
+    width: 100%;
+    min-height: 60vh;
+    border-top: 1px solid #313131;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15vw;
+}
+
+.footer-main .logo-footer img {
+    width: 182px;
+    padding-top: 16px;
+}
+.footer-main h5{
+    font-family: "Jost", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer-main h5 .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #9b9b9b;
+    border-radius: 5px;
+}
+.menu-footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-footer ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+.menu-footer ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-main .contact-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.contact-footer  i{
+    font-size: 24px;
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+.social-footer a{
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.copyright{
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    background-color: #111;
+}
